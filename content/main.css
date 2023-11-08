@@ -252,4 +252,10 @@ body {
         overflow: hidden;
         line-height: 1.2em;
     }
+    .navbar {
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
 }
