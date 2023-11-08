@@ -112,16 +112,16 @@ body {
 
 /* Card Styles */
 .st-2 {
-    min-width: 20rem;
+    max-width: 99%;
     min-height: 50rem;
-    margin: 1rem;
+    margin:10px;
 }
 
 .card-st-2 {
     margin-top: 3rem;
     border-radius: 0.3rem;
     background-color: rgb(238, 238, 238);
-    padding: 3rem;
+    padding: 2rem;
     max-width: 400px;
     height: 420px;
     font-size: 20px;
@@ -222,7 +222,6 @@ body {
     .st-2 {
         max-width: auto;
         min-height: 50rem;
-        margin: 2.5rem;
     }
 
     .card-st-2 {
