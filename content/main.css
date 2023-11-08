@@ -253,7 +253,12 @@ body {
         line-height: 1.2em;
     }
     .navbar {
-        display: flexbox;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .nav-links {
+        display: none;
         justify-content: center;
         align-items: center;
         padding: 10px;
