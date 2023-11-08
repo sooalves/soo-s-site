@@ -198,4 +198,11 @@ body {
         margin: auto;
         position: relative;
     }
+    .st-2 {
+        max-width: auto;
+        min-height: 50rem;
+        margin: 2.5rem;
+        left:1rem;
+    
+    }
 }
