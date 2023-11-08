@@ -10,55 +10,56 @@
 <body>
     <!-- Header Section -->
     <section class="header pd-10r">
-        <div class="hdr-hed">soo's site</div>
-    </section>
-
-    <!-- Buttons Section -->
-    <section class="aita-c t-20 rl">
-        <div onclick="window.location.href='index.html' " class="w-150p button rl dy-ib pd-10p">
-            <p class="rl t-13">Home</p>
-        </div>
-        <div onclick="agentFoam();" class="w-150p button rl dy-ib pd-10p">
-            <p class="rl t-13">Foam</p>
-        </div>
-        <div onclick="window.location.href='hackearurnas.html' " class="w-150p button rl dy-ib pd-10p">
-            <p class="rl t-13">Fraude urnas</p>
-        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="hdr-hed">soo's site</div>
+            </div>
+            <ul class="nav-links">
+                <li onclick="window.location.href='index.html'"><i class="fas fa-home"></i></li>
+                <li onclick="agentFoam();"><i class="fa-solid fa-triangle-exclamation"></i></li>
+                <li onclick="window.location.href='https://www.youtube.com/shorts/p6g1a5OmFsg'"><i class="fas fa-rocket"></i></li>
+            </ul>
+        </nav>
     </section>
 
     <!-- Cards Section -->
     <section class="st-2 aita-c">
         <div class="card-st-2 aias-c">
-            <!-- Card Content 1 -->
-            <i style="text-align:center;font-size:30px;" class="fa-solid fa-circle-info"></i>
+            <i class="fa-solid fa-circle-info"></i>
             <h2>Sobre Ruby</h2>
-                <p class="ta-s">
-                    Antigamente no Ruby, se usava o Fixnum e Bignum ao invês do Integer, por isso, normalmente os cursos "antigos" mostram Fixnum e Bignum em operações matemáticas. Hoje em dia esses dois resultados são alterados pelo integer
-                    <div class="tips-trm ta-s rl pd-10p">irb(main):001:0> 1.class<br>=><s>Fixnum</s> <in style="color:rgb(46, 46, 216);">Integer</in></div>
-                </p>
+            <p class="ta-s">
+                Antigamente no Ruby, se usava o Fixnum e Bignum ao invés do Integer, por isso, normalmente os cursos "antigos" mostram Fixnum e Bignum em operações matemáticas. Hoje em dia esses dois resultados são alterados pelo Integer
+                <div class="tips-trm ta-s rl pd-10p">
+                    irb(main):001:0> 1.class
+                    => <s>Fixnum</s> <in style="color:rgb(46, 46, 216);">Integer</in>
+                </div>
+            </p>
         </div>
         <div class="card-st-2 aias-c">
-            <!-- Card Content 1 -->
-            <i style="text-align:center;font-size:30px;" class="fa-solid fa-circle-info"></i>
+            <i class="fa-solid fa-circle-info"></i>
             <h2>Sobre CSS:</h2>
-                <p class="ta-s">
-                    A criação e uso de classes predefinidas para abreviar e globalizar usos de estilos num site, sem comprometer elementos, e onde vemos seus usos? Em frameworks, como bootstrap e outros, que fornecem classes predefinidas
-                    <div class="tips-trm ta-s rl pd-10p"><in style="color:rgb(199, 148, 8)">.ta-c</in>{text-align:center;}<br>&lt;a <in style="color:rgb(199, 148, 8)">class="ta-c"</in>&gt;<br>centralizado<br>&lt;/a&gt;</div>
-                </p>
+            <p class="ta-s">
+                A criação e uso de classes predefinidas para abreviar e globalizar usos de estilos num site, sem comprometer elementos, e onde vemos seus usos? Em frameworks, como bootstrap e outros, que fornecem classes predefinidas
+                <div class="tips-trm ta-s rl pd-10p">
+                    <in style="color:rgb(199, 148, 8)">.ta-c</in>{text-align:center;}
+                    <br>&lt;a <in style="color:rgb(199, 148, 8)">class="ta-c"</in>&gt;
+                    <br>centralizado
+                    <br>&lt;/a&gt;
+                </div>
+            </p>
         </div>
     </section>
 
     <!-- Banner Section -->
     <section class="banner aias-c">
-        <!-- Banner Content -->
         <div class="wd-15r button aita-c t-1r dy-ib pd-1r rl">
-            <p class="t-13 rl">Onde tudo é possivel</p>
+            <p class="t-13 rl">Onde tudo é possível</p>
         </div>
     </section>
 
     <!-- Footer Section -->
     <section class="footer">
-        construido com o <i class="fas fa-heart io"></i> costumersoo
+        construído com o <i class="fas fa-heart io"></i> costumersoo
     </section>
 
     <script src="content/main.js"></script>
