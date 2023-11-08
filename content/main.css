@@ -1,3 +1,4 @@
+@import url(terminal.css);
 /* classes personalizadas*/
 .t-1r {
 	top:-4rem;
@@ -94,15 +95,14 @@ body {
     border-radius: 0.3rem;
     background-color: rgb(238, 238, 238);
     padding: 3rem;
-    max-width: 300px;
-    height: 500px;
+    max-width: 400px;
+    height: 420px;
     font-size: 20px;
     justify-content: center;
 	display:inline-block;
 	text-overflow: ellipsis;
 	word-wrap: break-word;
 	overflow: hidden;
-	max-height: 600px;
 	line-height: 1.4em;
 }
 
@@ -204,5 +204,41 @@ body {
         margin: 2.5rem;
         left:1rem;
     
+    }
+    .card-st-2 {
+        max-width: 400px;
+        height: 420px;
+        font-size: 20px;
+        justify-content: center;
+        display:inline-block;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        line-height: 1.0em;
+    }
+    .post {
+        margin-top: 2rem;
+        border-radius: 0.3rem;
+        background-color: rgb(238, 238, 238);
+        padding: 2rem;
+        max-width: 80%;
+        min-width: 80%;
+        min-height: 10rem;
+        font-size: 20px;
+        justify-content: center;
+        display:inline-block;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        line-height: 1.2em;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    section.text-front{text-align: center;padding-top:100px;color:white;font:normal 20pt monospace;margin:auto;}
+    section.body-front{width: 100%;height:500px;background-color:purple;}
+    section.box-terminal{font-family:monospace;background:black;max-width:400px;height:250px;overflow:hidden;position:relative;margin:auto;top:1rem;color:rgb(172, 172, 172);}
+    @keyframes terminal {
+    0% {top:-25px;opacity:0;}
+    100% {top:15px;opacity:0.75;}
     }
 }
