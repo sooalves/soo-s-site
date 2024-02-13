@@ -37,8 +37,8 @@ class posts extends HTMLElement {
 			border-radius: 0.6rem;
 			background-color: rgb(238, 238, 238);
 			padding: 2rem;
-			min-width: 21rem;
-			max-width: 21rem;
+			width: 17rem;
+			width: 21rem;
 			height: 21rem;
 			font-size: 20px;
 			display: inline-block;
@@ -119,6 +119,10 @@ class posts extends HTMLElement {
 		.w-150p {
 			width: 150px;
 			height: 25px;
+		}
+		@media only screen and (max-width: 700px) {
+			.card-st-2 {
+				max-width:75%;
 		}
 		`;
 		shadow.appendChild(style);
