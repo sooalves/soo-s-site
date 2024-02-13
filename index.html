@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="content/main.css">
+    <script src="content/src/whiteBoxs.js" defer></script>
     <title>wbs - Home</title>
 </head>
 <body>
@@ -14,40 +15,20 @@
             <div class="logo">
                 <div class="hdr-hed">soo's site</div>
             </div>
-            <ul class="nav-links">
-                <li onclick="window.location.href='index.html'"><i class="fas fa-home"></i></li>
-                <li onclick="agentFoam();"><i class="fa-solid fa-triangle-exclamation"></i></li>
-                <li onclick="window.location.href='https://www.youtube.com/shorts/p6g1a5OmFsg'"><i class="fas fa-rocket"></i></li>
-            </ul>
         </nav>
     </section>
-
+        <section class="container aita-c">
+            
+        </section>
     <!-- Cards Section -->
     <section class="st-2 aita-c">
-        <div class="card-st-2 aias-c">
-            <i class="fa-solid fa-circle-info"></i>
-            <h2>Sobre Ruby</h2>
-            <p class="ta-s">
-                Antigamente no Ruby, se usava o Fixnum e Bignum ao invés do Integer, por isso, normalmente os cursos "antigos" mostram Fixnum e Bignum em operações matemáticas. Hoje em dia esses dois resultados são alterados pelo Integer
-                <div class="tips-trm ta-s rl pd-10p">
-                    irb(main):001:0> 1.class
-                    => <s>Fixnum</s> <in style="color:rgb(46, 46, 216);">Integer</in>
-                </div>
-            </p>
-        </div>
-        <div class="card-st-2 aias-c">
-            <i class="fa-solid fa-circle-info"></i>
-            <h2>Sobre CSS:</h2>
-            <p class="ta-s">
-                A criação e uso de classes predefinidas para abreviar e globalizar usos de estilos num site, sem comprometer elementos, e onde vemos seus usos? Em frameworks, como bootstrap e outros, que fornecem classes predefinidas
-                <div class="tips-trm ta-s rl pd-10p">
-                    <in style="color:rgb(199, 148, 8)">.ta-c</in>{text-align:center;}
-                    <br>&lt;a <in style="color:rgb(199, 148, 8)">class="ta-c"</in>&gt;
-                    <br>centralizado
-                    <br>&lt;/a&gt;
-                </div>
-            </p>
-        </div>
+        <card-s title="Ruby" data-content="conteudo" trm="aaa"></card-s>
+        <card-s title="Post 2" data-content="conteudo" trm="conteudo terminal"></card-s>
+        <card-s title="Post 3" data-content="conteudo" trm="conteudo terminal"></card-s>
+        <card-s title="css" data-content="conteudo" trm="conteudo terminal"></card-s>
+        <card-s title="css" data-content="conteudo" trm="conteudo terminal"></card-s>
+        <card-s title="css" data-content="conteudo" trm="conteudo terminal"></card-s>
+
     </section>
 
     <!-- Banner Section -->
