@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>non legible</title>
+	<link rel="stylesheet" href="content/main.css">
+</head>
+
+<body>
+	<section class="header">
+		<div class="navbar">
+			<div class="nav logo">legible? no</div>
+		</div>
+	</section>
+	<section class="container">
+		<div class="cardLeft">Por que facilitar, quando podemos deixar TUDO ilegível e mais divertido</div>
+		<div class="cardRight">
+			<form action="verify.php" method="get">
+				<fieldset class="fldset">
+					<legend style="text-align: right;">Sign-up</legend>
+					<div class="email">
+						<label for="email">Seu Email</label><br>
+						<input type="email" name="email" id="email" required>
+					</div>
+					<div class="password">
+						<label for="passgen">Senha</label><br>
+						<input type="text" name="passgen" id="passgen" readonly required>
+					</div>
+					<div class="btn-fnl">
+					<input class="btn-generate"type="button" onclick="generatePassword()" value="Generate"></input>
+					<input type="submit" value="Submit">
+				</div>
+				</fieldset>
+			</form>
+		</div>
+	</section>
+
+	<script>
+		function generatePassword() {
+			const email = document.getElementById('email').value;
+			const password = Math.random().toString(36).slice(-10);
+			document.getElementById('passgen').value = password;
+		}
+	</script>
+</body>
+
+</html>

@@ -8,11 +8,11 @@ class posts extends HTMLElement {
 
 		//create boxes
 		const boxCard = document.createElement("div");
-		boxCard.setAttribute("class", "card-st-2 aias-c");
+		boxCard.setAttribute("class", "card-st-2 ta-s");
 
 		//title card
 		const titleCard = boxCard.appendChild(document.createElement("h2"));
-		titleCard.setAttribute("class", "title-p");
+		titleCard.setAttribute("class", "title-p", "ta-s");
 		titleCard.textContent = this.getAttribute("title");
 
 		//text content
@@ -22,14 +22,19 @@ class posts extends HTMLElement {
 		//take atr and put in <p>
 		const text = this.getAttribute("data-content");
 		paragraphCard.textContent = text;
+
+		const link = paragraphCard.appendChild(document.createElement("a"));
+		const linkHref = this.getAttribute("link")
+		link.setAttribute("class","ta-en");
+		link.setAttribute("href", linkHref)
+		link.textContent = ' '+ "Ler mais";
 		
 		//create terminal
-		const terminalCard = paragraphCard.appendChild(document.createElement("div"));
+		/*const terminalCard = paragraphCard.appendChild(document.createElement("div"));
 		terminalCard.setAttribute("class", "tips-trm ta-s rl pd-10p")
 		terminalCard.textContent = this.hasAttribute("trm") ? this.getAttribute("trm") : ""
-		
+		*/
 		const style = document.createElement("style");
-		console.log(style.isConnected);
 
 		style.textContent = 
 		`.card-st-2 {
@@ -37,9 +42,8 @@ class posts extends HTMLElement {
 			border-radius: 0.6rem;
 			background-color: rgb(238, 238, 238);
 			padding: 2rem;
-			width: 17rem;
-			width: 21rem;
-			height: 21rem;
+			width: 75%;
+			min-height: 20rem;
 			font-size: 20px;
 			display: inline-block;
 			text-overflow: ellipsis;
@@ -53,6 +57,11 @@ class posts extends HTMLElement {
 		.aias-c {
 			align-items: center;
 			align-self: center;
+		}
+		.ta-en {
+			display:flex;
+			text-align:left;
+			text-decoration:none;
 		}
 		.ta-s {
 			text-align: start;
@@ -123,13 +132,12 @@ class posts extends HTMLElement {
 		@media only screen and (max-width: 700px) {
 			.card-st-2 {
 				max-width:75%;
+				height:100%;
 		}
 		`;
 		shadow.appendChild(style);
-		console.log(style.isConnected);
 		shadow.appendChild(boxCard);
 		boxCard.appendChild(paragraphCard);
-		boxCard.appendChild(terminalCard);
 		
 	}
 }

@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	font-family: monospace;
+	box-sizing: border-box; /* Adicionando box-sizing para incluir padding e borda no cálculo do tamanho */
+}
+
+body {
+	background-color: rgb(23, 23, 23);
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	font-size: 2em;
+	background-color: rgb(23, 23, 23);
+	color: white;
+	padding: 2rem;
+}
+
+.navbar {
+	display: flex;
+	justify-content: center;
+	margin: 0 20px 0px 10px;
+}
+
+.container {
+	background-color: aquamarine;
+	min-height: 100vh; /* Alterado para min-height para prevenir quebra de conteúdo em dispositivos menores */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+}
+
+.fldset {
+	padding: 1rem;
+	border: 1px solid black;
+	border-radius: 9px;
+	box-shadow: 7px 6px 11px 0px rgba(23, 23, 23, 0.75);
+	-webkit-box-shadow: 7px 6px 11px 0px rgba(23, 23, 23, 0.75);
+	-moz-box-shadow: 7px 6px 11px 0px rgba(23, 23, 23, 0.75);
+}
+
+.cardLeft {
+	display: inline-flex;
+	color: black;
+	font-size: 2em;
+	max-width: 600px;
+	padding: 2rem;
+	text-align: center;
+}
+
+.cardRight {
+	padding: 2rem;
+	text-align: start;
+	width: 400px; /* Garantir largura total do conteúdo */
+}
+
+input{
+	outline: none;
+	text-decoration: none;
+	border: 0;
+	border-radius: 0.4rem;
+	background-color: white; /* Alterado para transparente para evitar sobreposição de cores */
+	padding: 0.5rem;
+	margin: 0.3rem;
+	border-bottom: 2px solid rgb(52, 109, 109);
+	width: 99%; /* Garantir largura total dos campos de entrada */
+}
+.btn-generate {
+	background-color:aquamarine;
+	border:1px solid rgb(52, 109, 109);
+}
+.btn-fnl {
+	display:inline-flex;
+	width: 100%;
+}
+
+label {
+	text-align: start;
+}
+
+@media (max-width: 700px) {
+	.container {
+		padding: 0.5rem; /* Reduzir o padding para economizar espaço */
+	}
+
+	.cardLeft {
+		font-size: 1.5em; /* Reduzir o tamanho da fonte */
+		max-width: 80%; /* Reduzir a largura máxima */
+	}
+
+	.cardRight {
+		padding: 1rem; /* Reduzir o padding */
+	}
+}
+
+@media (max-width: 300px) {
+	.cardRight {
+		padding: 0.5rem; /* Reduzir o padding ainda mais para telas muito pequenas */
+	}
+}
